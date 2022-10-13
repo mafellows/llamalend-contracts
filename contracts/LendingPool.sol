@@ -316,7 +316,7 @@ contract LendingPool is OwnableUpgradeable, ERC721Upgradeable, Clone {
     fallback() external {
         // money can still be received through self-destruct, which makes it possible to change balance without calling updateInterest, but if
         // owner does that -> they are lowering the money they earn through interest
-        // debtor does that -> they always lose money because all loans are < 2 weeks
+        // debtor does that -> they always lose money because all loans are < 2 week
         revert();
     }
 }

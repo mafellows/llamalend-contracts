@@ -22,7 +22,7 @@ contract LlamaLendFactory is Ownable {
         uint _maxDailyBorrows, string memory _name, string memory _symbol,
         uint96 _maxLoanLength, LendingPool.Interests calldata interests
     ) external returns (LendingPool pool) {
-        require(_maxLoanLength < 1e18, "maxLoanLength too big"); // 31bn years, makes sure that reverts cant be forced through this
+        require(_maxLoanLength < 1e18, "maxLoanLength too big"); // 31bn year, makes sure that reverts cant be forced through this
         pool = LendingPool(address(implementation).clone());
         pool.initialize(_oracle, _maxPrice, _maxDailyBorrows, _name, _symbol, interests, msg.sender, _nftContract, address(this), _maxLoanLength);
         emit PoolCreated(_nftContract, msg.sender, address(pool));

@@ -1,0 +1,7 @@
+{
+    "environmentVariables": {
+        "ETH_RPC": "CG_ETH_MAINNET_RPC",
+        "GOERLI_RPC": "CG_GOERLI_RPC",
+        "PRIVATEKEY": "CG_PRIVATE_KEY"
+    }
+}

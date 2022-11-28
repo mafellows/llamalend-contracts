@@ -108,7 +108,7 @@ npx hardhat verify --network rinkeby DEPLOYED_CONTRACT_ADDRESS
 ## Some future ideas
 - Allow anyone to LP
 
-Trigger audit 6
+Trigger audit 7
 Executing test audit 1668657102
 
 Executing test audit 1668660159
